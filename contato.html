@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - EcoTech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+
+</head>
+<body>
+<header>
+  <!-- Menu principal com destaque no link atual -->
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Fale Conosco</h1>
+    <!-- Formulário de contato com validação HTML5 -->
+    <form id="form-contato">
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required minlength="2" /><br /><br />
+  
+  <label for="email">E-mail:</label><br />
+  <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required /><br /><br />
+  
+  <label for="mensagem">Mensagem:</label><br />
+  <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea><br /><br />
+  
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- Elemento para mostrar mensagens -->
+<div id="feedback" role="alert" aria-live="polite" style="margin-top: 1em; font-weight: bold; color: green;"></div>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 EcoTech Solutions - Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
