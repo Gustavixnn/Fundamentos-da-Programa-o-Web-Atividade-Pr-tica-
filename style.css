@@ -71,30 +71,75 @@ nav .menu li a:hover {
   font-size: 0.9em;
 }
 
-
 main {
+  flex: 1;
+  min-width: 320px;
+  max-width: 90%;
+  margin: 40px auto;
+  background: white;
+  padding: 48px;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  min-height: 600px; 
+}
+
+.indexmain{
   flex: 1;
   max-width: 100%;
   margin: 40px auto;
   background: white;
   padding: 32px;
   border-radius: 8px;
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-h1 {
-  color: #2d6a4f;
-  margin-bottom: 22px;
-  font-size:3em ;
-  margin-left: 38%;
+
+h1.index {
+  text-align: center;
+  margin-left: 3%;
+   color: #2d6a4f;
+     font-size:3em ;
 }
+
+
+h1.sobre {
+  text-align: center;
+  margin-left: 2%;
+   color: #2d6a4f;
+     font-size:3em ;
+}
+
+
+h1.formacao {
+  text-align: center;
+  margin-left: 5%;
+   color: #2d6a4f;
+     font-size:3em ;
+}
+
+
+h1.portfolio {
+  text-align: center;
+  margin-left: 3%;
+   color: #2d6a4f;
+     font-size:3em ;
+}
+
+
+h1.Contato{
+  text-align: center;
+  margin-left: 5%;
+   color: #2d6a4f;
+     font-size:3em ;
+}
+
 
 h2{
     margin-top: -150px;
     color: #2d6a4f;
     position: absolute;
     margin-bottom:22px ;
-    margin-left: 35%;
+    margin-left: 7%;
     font-size:3em ;
 }
 
@@ -119,24 +164,51 @@ a {
   margin-top: 250px;
 }
 
-.carousel {
-  position: relative;
-  max-width: 700px;
-  margin: 0 auto;
-  overflow: hidden;
+p{
+  margin-top: 20px;
 }
 
-.carousel-track-container {
+section {
+  max-width: 600px;
+  margin: 2em auto; 
+  padding: 1.5em; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;  
+  padding: 0.6em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+
+
+.carousel { 
   overflow: hidden;
+  position: relative;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.4s ease-in-out;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  transition: transform 0.3s ease-in-out;
 }
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 
 .carousel-slide {
   min-width: 100%;
@@ -194,6 +266,7 @@ form label {
   display: block;
   margin-bottom: 6px;
   color: #2d6a4f;
+    margin-top: 20px
 }
 
 form input[type="text"],
@@ -206,6 +279,7 @@ form textarea {
   font-size: 1em;
   margin-bottom: 18px;
   resize: vertical;
+
 }
 
 form button {
@@ -218,6 +292,7 @@ form button {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 50px;
 }
 
 form button:hover {
